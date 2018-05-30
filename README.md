@@ -1,4 +1,60 @@
 # 目录介绍
+这是eclipse创建的maven项目，主要目录文件如下：
+DUBBODEMO
+│  pom.xml
+│  │  
+├─dubbo-api
+│  │  pom.xml 
+│  │  
+│  ├─src
+│  │  └─main
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─alibaba
+│  │      │          └─dubbo
+│  │      │              └─demo
+│  │      │                      DemoService.java
+│  │      │                      
+│  │      └─resources
+│  │              index.html
+├─dubbo-consumer
+│  │  pom.xml
+│  │    
+│  ├─src
+│  │  └─main
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─alibaba
+│  │      │          └─dubbo
+│  │      │              └─consumer
+│  │      │                      Consumer.java
+│  │      │                      
+│  │      └─resources
+│  │          │  log4j.properties
+│  │          │  
+│  │          └─META-INF
+│  │              └─spring
+│  │                      dubbo-demo-consumer.xml
+└─dubbo-provider
+    │  pom.xml
+    │  
+    ├─src
+    │  └─main
+    │      ├─java
+    │      │  └─com
+    │      │      └─alibaba
+    │      │          └─dubbo
+    │      │              └─demo
+    │      │                  └─impl
+    │      │                          DemoServiceImpl.java
+    │      │                          Provider.java
+    │      │                          
+    │      └─resources
+    │          │  log4j.properties
+    │          │  
+    │          └─META-INF
+    │              └─spring
+    │                      dubbo-demo-provider.xml
 # Dubbo入门Demo
 要了解Dubbo，自然要搭建一个简单的Demo实现。本文采用Dubbo与Zookeeper、Spring框架的整合。
 主要是以下几个步骤：
